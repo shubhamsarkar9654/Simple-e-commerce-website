@@ -111,22 +111,27 @@ const postDeleteCart = (req,res) => {
 const postOrders = (req,res) => {
     User.findById(req.user._id)
         .populate('cart.items.productId')
-        .then(user => {
-            const order = new Order ({
+        .then(async user => {
+            console.log(user)
+            const order = await new Order ({
                 name: user.name,
                 userId: user._id,
                 products: user.cart.items.map(i => {
                     return {product: {...i.productId},quantity: i.quantity}
                 })
             })
-            order.save()
+            await order.save()
             return user
         })
         .then((user) => {
+            console.log(127,user)
             user.cart.items = []
             user.save()
             return res.redirect('/orders')
-        })  
+        }) 
+        .catch(err => {
+            console.log(err)
+        }) 
 }
 
 
