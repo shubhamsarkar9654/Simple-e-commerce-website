@@ -1,28 +1,28 @@
 'use strict'
 
-const express = require('express')
-const path = require('path')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-const session = require('express-session')
-const MongoDBStore = require('connect-mongodb-session')(session)
-const csrf = require('csurf')
-const flash = require('connect-flash')
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const session = require('express-session');
+const MongoDBStore = require('connect-mongodb-session')(session);
+const csrf = require('csurf');
+const flash = require('connect-flash');
 
-const adminRoutes = require('./routes/adminRoutes')
-const shopRoutes = require('./routes/shopRoutes')
-const authRoutes = require('./routes/authRoutes')
-const User = require('./models/users')
+const adminRoutes = require('./routes/adminRoutes');
+const shopRoutes = require('./routes/shopRoutes');
+const authRoutes = require('./routes/authRoutes');
+const User = require('./models/users');
 
 const app = express()
 const store = new MongoDBStore({
     uri: 'mongodb://localhost/miniShop',
     collection: 'sessions'
-})
+});
 const csrfProtection = csrf();
 
-app.set('view engine', 'ejs')
-app.set('views', 'views')
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
