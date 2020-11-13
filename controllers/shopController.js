@@ -112,7 +112,6 @@ const postOrders = (req,res) => {
     User.findById(req.user._id)
         .populate('cart.items.productId')
         .then(async user => {
-            console.log(user)
             const order = await new Order ({
                 name: user.name,
                 userId: user._id,
@@ -124,7 +123,6 @@ const postOrders = (req,res) => {
             return user
         })
         .then((user) => {
-            console.log(127,user)
             user.cart.items = []
             user.save()
             return res.redirect('/orders')

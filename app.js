@@ -14,6 +14,10 @@ const shopRoutes = require('./routes/shopRoutes');
 const authRoutes = require('./routes/authRoutes');
 const User = require('./models/users');
 
+// create sample user and products
+require('./util/samples').createSamples()
+
+
 const app = express()
 const store = new MongoDBStore({
     uri: 'mongodb://localhost/miniShop',

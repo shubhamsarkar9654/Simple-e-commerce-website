@@ -1,0 +1,62 @@
+[
+    {
+        "title": "ben 10",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51I3+UiA8bL.jpg"
+    },
+    {
+        "title": "iron man",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1147349.jpg"
+    },
+    {
+        "title": "wonder women",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://cnet3.cbsistatic.com/img/uVV6dcO5Gll5_w6aHzIelVB26K0=/940x0/2016/09/30/476d7190-b495-44d2-bd4a-e253f7c3d9a7/wonderwoman1.jpg"
+    },
+    {
+        "title": "tom and jerry",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://storage.googleapis.com/hipcomic/p/d3bff9812c4ed42cc11c0cb3b4883e2b.jpg"
+    },
+    {
+        "title": "doraemon",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/products/51GQDQBPJ1L.jpeg?v=1571442023"
+    },
+    {
+        "title": "shinchan",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51Uj0DFHdlL._SX318_BO1,204,203,200_.jpg"
+    },
+    {
+        "title": "spider man",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91VPHVqSXDL.jpg"
+    },
+    {
+        "title": "super man",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://cdn.flickeringmyth.com/wp-content/uploads/2020/03/Superman-21-1-600x922.jpg"
+    },
+    {
+        "title": "chotta bheem",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71-7+KgIReL.jpg"
+    },
+    {
+        "title": "shaktiman",
+        "price": "100",
+        "description": "sample products...",
+        "imageUrl": "https://comicvine1.cbsistatic.com/uploads/scale_small/12/125473/2533013-genl_1164.jpg"
+    }
+]

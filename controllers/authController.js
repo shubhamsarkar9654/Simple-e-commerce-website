@@ -68,7 +68,7 @@ const postSignup = (req,res) => {
 				req.flash('error','Email already exists! please enter valid Email!')
 				return res.redirect('/signup')
 			}
-			return bcrypt.hash(password,13)
+			return bcrypt.hash(password,10)
 				.then(hashPassword => {
 					const user = new User({
 						name : name,
